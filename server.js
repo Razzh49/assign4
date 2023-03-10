@@ -87,11 +87,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-  res.sendFile(path.join(__dirname, "/views/about.html"));
+  res.sendFile(path.join(__dirname, "./views/about.html"));
 });
 
 app.get("/htmlDemo", (req, res) => {
-  res.sendFile(path.join(__dirname, "/views/htmlDemo.html"));
+  res.sendFile(path.join(__dirname, "./views/htmlDemo.html"));
 });
 
 app.use((req, res, next) => {
@@ -102,5 +102,5 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/addStudent", (req, res) => {
-  res.sendFile(path.join(__dirname, "/views/addStudent.html"));
+  res.sendFile(path.join(__dirname, "./views/addStudent.html"));
 });
