@@ -102,5 +102,5 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/addStudent", (req, res) => {
-  res.sendFile(path.join(__dirname, "./views/addStudent.html"));
+  res.sendFile(path.join(__dirname, "/views/addStudent.html"));
 });
