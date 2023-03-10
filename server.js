@@ -17,7 +17,7 @@ var app = express();
 const collegeData = require("./modules/collegeData.js");
 
 
-app.use(express.static("public"));
+app.use(express.static('public'));
 
 
 app.use(express.urlencoded({ extended: true }));
