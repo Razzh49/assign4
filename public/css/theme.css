@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dancing+Script:wght@500&family=Indie+Flower&display=swap');
 .bg-light {
   background-color: #8ead52;
   box-shadow: 5px 5px;
@@ -8,16 +10,16 @@
   color: black;
 }
 
-a {
+a.nav-link {
   font-family: "Dancing Script", cursive;
   color: #fb0413;
 }
 
-a:hover {
+a.nav-link:hover {
   font-family: "Dancing Script", cursive;
   color: #6213ec;
 }
-body {
+html,body {
   background: rgb(174, 238, 231);
   background: radial-gradient(
     circle,
@@ -25,4 +27,31 @@ body {
     rgba(224, 237, 226, 1) 100%
   );
 }
+.btn-primary{
+  background: rgb(60,32,69);
+background: radial-gradient(circle, rgba(60,32,69,1) 0%, rgba(224,237,226,1) 100%);
+box-shadow: 11px -2px 35px 3px #1ce652;
+}
+.btn-primary:hover{
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  box-shadow: 5px 10px 5px 10px #b2d629;
+}
+}
+table tr:nth-child(odd){
+  background: rgb(37,109,156);
+background: radial-gradient(circle, rgba(37,109,156,1) 0%, rgba(224,237,226,1) 100%);
+}
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Caveat', cursive;
+  color: #a0ee11;
+  text-shadow: 2px 2px;
+}
+
+legend {
+  padding: 50px 0px 50px 0px;
+  font-family: 'Indie Flower', cursive;
+  color: #1018ef;
+  text-shadow: 2px 2px;
+}
