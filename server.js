@@ -16,6 +16,11 @@ var path = require("path");
 var app = express();
 const collegeData = require("./modules/collegeData.js");
 
+
+app.use(express.static("public"));
+
+
+app.use(express.urlencoded({ extended: true }));
 collegeData
   .initialize()
   .then(() => {
@@ -81,9 +86,6 @@ app.get("/student/num", (req, res) => {
       res.json(err);
     });
 });
-app.use(express.static("public"));
-app.use(express.urlencoded({ extended: true }));
-
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "./views/home.html"));
