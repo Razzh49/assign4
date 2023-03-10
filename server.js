@@ -94,6 +94,10 @@ app.get("/htmlDemo", (req, res) => {
   res.sendFile(path.join(__dirname, "./views/htmlDemo.html"));
 });
 
+app.get("/addStudent", (req, res) => {
+  res.sendFile(path.join(__dirname, "./views/addStudent.html"));
+});
+
 app.use((req, res, next) => {
   res.status(404).send("Page Not Found");
 });
@@ -101,6 +105,3 @@ app.use((req, res, next) => {
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
 
-app.get("/addStudent", (req, res) => {
-  res.sendFile(path.join(__dirname, "./views/addStudent.html"));
-});
