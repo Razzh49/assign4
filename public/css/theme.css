@@ -1,24 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Tilt+Prism&display=swap");
-nav {
+.bglight {
   background-color: #8ead52;
   box-shadow: 5px 5px;
 }
-nav.navbar-light .navbar-brand {
+.navbar-light .navbar-brand {
   font-family: "Oswald", sans-serif;
+  color: black;
 }
 
-nav a {
+a {
   font-family: "Oswald", sans-serif;
   font-family: "Tilt Prism", cursive;
   color: #fb0413;
 }
 
-nav a:hover {
+a:hover {
   font-family: "Oswald", sans-serif;
   font-family: "Tilt Prism", cursive;
   background-color: #6213ec;
 }
 body {
-  background-color: aqua;
+  background-color: #e9fafc;
 }
