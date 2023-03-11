@@ -38,7 +38,7 @@ box-shadow: 11px -2px 35px 3px #1ce652;
   box-shadow: 5px 10px 5px 10px #b2d629;
 }
 }
-table tr:nth-child(odd){
+table{
   background: rgb(37,109,156);
 background: radial-gradient(circle, rgba(37,109,156,1) 0%, rgba(224,237,226,1) 100%);
 }
